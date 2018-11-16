@@ -3,7 +3,7 @@ var playlist = {
   Slipknot: "Duality"
 };
 
-function updatePlaylist(playlist, artist, song) {
-  playlist = Object.assign({}, {[artist]:song});
-  return playlist;
+function updatePlaylist(obj, artist, song) {
+  var newPlay = Object.assign(obj, {[artist]:song});
+  return newPlay;
 }
